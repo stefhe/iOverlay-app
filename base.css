@@ -1,0 +1,336 @@
+:root {
+  font-size: 62.5%;
+  --form-control-color: rebeccapurple;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  background: url(https://i.imgur.com/NJGPKRz.png) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.app {
+  display: flex;
+  width: 90vw;
+  height: 100%;
+  background: #333C4D;
+  margin: 24px 0;
+}
+menu {
+  background: #5A606D;
+  width: 320px;
+  padding: 24px;
+}
+menu nav.main-nav {
+  margin: 24px 0;
+}
+menu nav.main-nav p {
+  font-size: 1.6rem;
+}
+menu nav.main-nav span {
+  color: #9DA6B3;
+  letter-spacing: 0.15em;
+  margin: 0 0 8px 0;
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+menu nav.main-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+menu nav.main-nav ul li {
+  padding: 16px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+menu nav.main-nav ul li:hover {
+  background: #545B63;
+  transition: 0.2s ease-in;
+}
+menu nav.main-nav ul li.active {
+  position: relative;
+  background: #545B63;
+}
+menu nav.main-nav ul li.active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 16px;
+  left: 0;
+  width: 3px;
+  height: 24px;
+  background: #60CDFF;
+}
+main {
+  padding: 24px;
+  width: 75%;
+}
+main header {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0 0 0;
+}
+main header .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0px 0;
+}
+main header .main h1 {
+  font-size: 2.4rem;
+  color: #fff;
+}
+main header .text {
+  margin: 16px 0;
+}
+main header .text p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+main .overlay-settings {
+  margin: 24px 0 0 0;
+  color: #fff;
+}
+main .overlay-settings--item {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 8px 0;
+  cursor: -webkit-grab;
+  cursor: grab;
+  transition: 0.15s ease-in;
+}
+main .overlay-settings--item span {
+  margin: 0 16px 0 0;
+}
+main .overlay-settings--item span.subsetting {
+  color: #60CDFF;
+  cursor: pointer;
+  border-bottom: 1px #60CDFF solid;
+  margin: 0 0 0 8px;
+  align-self: flex-end;
+}
+main .overlay-settings--item:hover {
+  background: #303848;
+  border-radius: 4px;
+}
+main .overlay-settings--item-title {
+  margin: 0 0 0 16px;
+}
+nav.content {
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #333C4D;
+}
+nav.content:nth-child(3) {
+  position: sticky;
+  top: 48px;
+}
+nav.content ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #59606B;
+}
+nav.content ul li {
+  padding: 16px 16px 14px 16px;
+  color: #C3C6CA;
+  cursor: pointer;
+  line-height: 16px;
+  transition: 0.2s ease-in;
+}
+nav.content ul li:first-child {
+  padding: 16px 16px 14px 16px;
+}
+nav.content ul li:hover {
+  background: #272F3F;
+  color: #fff;
+}
+nav.content ul li.active {
+  position: relative;
+  color: #fff;
+}
+nav.content ul li.active::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #60CDFF;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #fff;
+}
+h1 h1,
+h2 h1,
+h3 h1,
+h4 h1,
+h5 h1 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 22.7px;
+}
+.button {
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.button-main {
+  background: #60CDFF;
+}
+.button-main:hover {
+  background: blue;
+}
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+input[type=select] {
+  background: red;
+  border: 0;
+  height: 40px;
+  margin: 0;
+}
+label.slider {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 48px;
+  height: 24px;
+  background: #323A48;
+  border: 1px solid #fff;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+label.slider:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+input:checked + label.slider {
+  background: #60CDFF;
+  border: 1px solid #323A48;
+}
+input:checked + label.slider:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+  background: #000;
+}
+label.slider:active:after {
+  width: 40px;
+}
+input:checked + label.slider:active:after {
+  width: 36px;
+}
+select,
+input[type=input],
+input[type=number] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.custom-select {
+  position: relative;
+  margin: 16px 0;
+  width: max-content;
+}
+.custom-select label {
+  position: absolute;
+  left: 8px;
+  top: -5px;
+  background: #333C4D;
+  padding: 0 5px;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+.custom-select span {
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  height: 24px;
+  width: 24px;
+  pointer-events: none;
+}
+.custom-select select {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 12px 8px;
+  width: 160px;
+  font-size: 1.4rem;
+  transition: 0.2s ease-in;
+}
+.custom-select select:hover {
+  border: 1px solid #ffffff;
+}
+.custom-input {
+  position: relative;
+  margin: 16px 0 32px 0;
+}
+.custom-input input[type=number] {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 12px 8px;
+  width: 240px;
+  font-size: 1.4rem;
+  transition: 0.2s ease-in;
+}
+.custom-input input[type=number]:hover {
+  border: 1px solid #ffffff;
+}
+.custom-input input[type=number]:focus {
+  border: 1px solid #60CDFF;
+}
+.custom-input label {
+  position: absolute;
+  left: 8px;
+  top: -5px;
+  background: #333C4D;
+  padding: 0 8px;
+  z-index: 1;
+  font-size: 1.2rem;
+}
+.custom-input span {
+  position: absolute;
+  left: 8px;
+  bottom: -16px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}

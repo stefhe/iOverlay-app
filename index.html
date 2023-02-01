@@ -1,0 +1,156 @@
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div class="app">
+  <menu>
+    <div class="menu-onboarding">
+      <nav class="main-nav">
+        <span>Welcome</span>
+        <p>First time in iOverlay? Read how to configure and set it up for the first time.</p>
+        <div class="button button-main">
+          take me there
+        </div>
+      </nav>
+    </div>
+    <nav class="main-nav">
+      <span>Overlays</span>
+      <ul>
+        <li class="active">General</li>
+        <li>Standing</li>
+        <li>Relative</li>
+        <li>Fuel calculator</li>
+      </ul>
+    </nav>
+  </menu>
+  
+  <main>
+    <header>
+      <div class="main">
+        <h1>iOverlay $overlay_title</h1>
+          <input type="checkbox" id="switch-for-general" /><label class="slider" for="switch-for-general">Toggle</label>
+      </div>
+      <div class="text">
+        <p>
+          Introductie over de algemene instellingen, wat je hier kan, blabla. Maximaal 2-3 regels intro voor leesbaarheid & zodat de settings snel gevonden kunnen worden.
+        </p>
+      </div>
+    </header>
+    
+    <nav class="content">
+      <ul>
+        <li>General</li>
+        <li class="active">Race</li>
+        <li>Quali</li>
+        <li>Practice</li>
+      </ul>
+    </nav>
+
+    <nav class="content">
+      <ul>
+        <li>Header</li>
+        <li class="active">Content</li>
+        <li>Footer</li>
+      </ul>
+    </nav>
+    
+    <div class="overlay-settings">
+      <h3>Options for $race $content</h3>
+      
+      <div class="custom-select">
+        <label for="custom-select">Font size</label>
+        <select>
+          <option>14 px</option>
+          <option>16 px</option>
+          <option>18 px</option>
+        </select>
+        <span class="material-symbols-outlined">
+          expand_more
+        </span>
+      </div>
+      
+      <div class="custom-select">
+        <label for="custom-select">Drivers at top</label>
+        <select>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <span class="material-symbols-outlined">
+          expand_more
+        </span>
+      </div>
+      
+      <div class="custom-input">
+        <label for="amount_drivers_top">Drivers top</label>
+
+        <input type="number" id="amount_drivers_top" 
+name="amount_drivers_top" value="3" min="1" max="10">
+        <span>the amount of top leading drivers</span>
+      </div>
+
+      <div class="custom-input">
+        <label for="amount_drivers_top">Drivers around me</label>
+
+        <input type="number" id="amount_drivers_top" name="amount_drivers_top" value="3" min="1" max="10">
+        <span>amount of drivers ahead and behind me</span>
+      </div>
+      
+      <div class="custom-input">
+        <label for="amount_drivers_top">Drivers around me</label>
+
+        <input type="number" id="amount_drivers_top" name="amount_drivers_top" value="3" min="1" max="10">
+        <span>amount of drivers ahead and behind me</span>
+      </div>
+      
+      <div class="overlay-settings--item">
+        <span class="material-symbols-outlined">
+          drag_handle
+        </span>
+        <input type="checkbox" id="switch-for-setting_1"/><label class="slider" for="switch-for-setting_1">Toggle</label>
+        <div class="overlay-settings--item-title">
+          %setting
+        </div>
+      </div>
+      
+      <div class="overlay-settings--item">
+        <span class="material-symbols-outlined">
+          drag_handle
+        </span>
+        <input type="checkbox" id="switch-for-setting_2"/><label class="slider" for="switch-for-setting_2">Toggle</label>
+        <div class="overlay-settings--item-title">
+          %setting
+        </div>
+      </div>
+      
+      <div class="overlay-settings--item">
+        <span class="material-symbols-outlined">
+          drag_handle
+        </span>
+        <input type="checkbox" id="switch-for-setting_3"/><label class="slider" for="switch-for-setting_3">Toggle</label>
+        <div class="overlay-settings--item-title">
+          %setting
+          <span class="subsetting">advanced</span>
+        </div>
+      </div>
+
+      <form>
+          <legend>Imperial or metric</legend>
+          <div>
+            <input type="radio" id="contactChoice1" name="contact" value="email" />
+            <label for="contactChoice1">Metric</label>
+      
+            <input type="radio" id="contactChoice2" name="contact" value="phone" />
+            <label for="contactChoice2">Imperial</label>
+          </div>
+      </form>
+      
+      
+    </div>
+  </main>
+  <aside>
+    preview section
+  </aside>
+</div>
